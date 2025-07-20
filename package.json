@@ -1,6 +1,8 @@
 {
     "name": "move-to-trash-or-temp",
     "displayName": "Move to Trash or Temp",
+    "publisher": "WEBGEEK",
+    "icon": "icon.png",
     "version": "0.0.2",
     "engines": {
         "vscode": "^1.101.2"
