@@ -7,6 +7,10 @@
     "engines": {
         "vscode": "^1.101.2"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/webgeek-studio/Move-to-Trash-or-Temp.git"
+    },
     "activationEvents": [
         "onCommand:extension.moveToTemp",
         "onCommand:extension.moveToTrash"
