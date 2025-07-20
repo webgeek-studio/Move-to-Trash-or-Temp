@@ -1,0 +1,56 @@
+{
+    "name": "move-to-trash-or-temp",
+    "displayName": "Move to Trash or Temp",
+    "version": "0.0.2",
+    "engines": {
+        "vscode": "^1.101.2"
+    },
+    "activationEvents": [
+        "onCommand:extension.moveToTemp",
+        "onCommand:extension.moveToTrash"
+    ],
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.moveToTemp",
+                "title": "Move to Temp"
+            },
+            {
+                "command": "extension.moveToTrash",
+                "title": "Move to Trash"
+            },
+            {
+                "command": "extension.clearTrash",
+                "title": "Clear Trash"
+            }
+        ],
+        "menus": {
+            "explorer/context": [
+                {
+                    "command": "extension.moveToTemp",
+                    "when": "resourceFilename != '.temp' && resourceFilename != '.trash'",
+                    "group": "9_cutcopypaste@0.1"
+                },
+                {
+                    "command": "extension.moveToTrash",
+                    "when": "resourceFilename != '.trash' && resourceFilename != '.temp'",
+                    "group": "9_cutcopypaste@0.2"
+                },
+                {
+                    "command": "extension.clearTrash",
+                    "when": "resourceFilename == '.trash'",
+                    "group": "9_cutcopypaste@0.3"
+                }
+            ]
+        }
+    },
+    "main": "./out/extension.js",
+    "scripts": {
+        "vscode:prepublish": "npx tsc -p ./"
+    },
+    "devDependencies": {
+        "@types/node": "^24.0.15",
+        "typescript": "^5.8.3",
+        "vscode": "^1.1.37"
+    }
+}

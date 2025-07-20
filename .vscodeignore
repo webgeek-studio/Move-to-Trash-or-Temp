@@ -1,0 +1,12 @@
+node_modules/**
+src/**
+.vscode/**
+*.ts
+*.map
+*.log
+!.vscodeignore
+!package.json
+!README.md
+!out/**
+LICENSE
+LICENSE.md

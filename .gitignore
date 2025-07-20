@@ -1,0 +1,9 @@
+node_modules/
+out/
+.vscode/
+*.vsix
+*.log
+*.tsbuildinfo
+.develop
+.trash/
+.temp/
