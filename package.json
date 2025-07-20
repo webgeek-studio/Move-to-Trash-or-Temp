@@ -11,6 +11,18 @@
         "type": "git",
         "url": "https://github.com/webgeek-studio/Move-to-Trash-or-Temp.git"
     },
+    "categories": [
+        "Other"
+    ],
+    "keywords": [
+        "trash",
+        "temp",
+        "recycle bin",
+        "move",
+        "file manager",
+        "explorer",
+        "vscode-extension"
+    ],
     "activationEvents": [
         "onCommand:extension.moveToTemp",
         "onCommand:extension.moveToTrash"
